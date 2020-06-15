@@ -93,12 +93,10 @@ section {
   margin-top: -30px;
 }
 
-.nav-header {
-  background-color: maroon;
-}
+
 
 #nav-list{
- font-size: bold;
+ font-weight:  bold;
 }
 .nav-brand {
   color: black;
