@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+      h3#heading{
+ margin:2%; 
+ text-align :center; 
+ color: #006400;
+}
+span{
+ color:red;
+ font-weight : bold;
+}
+
+ #submit,#login{
+
+    box-shadow: 0 5px 5px rgba(0, 0,0, 0.6);
+    border-radius:10px;
+    background-color:#e67c12;
+    border:1px solid #fff;
+    color:#fff;
+    margin-bottom: 15px;
+}
+#submit:hover,#login:hover{
+    box-shadow: 0 10px 10px rgba(0, 0,0, 0.6);  
+}
+div#chapterCard{
+    background-color:#f3f3f3;
+    border-radius:10px;
+    border:1px solid #cd853f;
+    box-shadow: 0 10px 10px rgba(0, 0,0, 0.6);
+}
+    </style>
+</head>
+<body>
+
+    <h2 style="margin:5% 0 3% 40%; color:#006400"><b><i>Sign Up</i></b></h2>
+        
+    <!-- Categories -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-6">
+               
+                <div class="card" id="chapterCard">
+                    <div class="card-body" >
+
+                    <!-- Login -->
+                    <form method="POST">
+                        <p class="text-center" style="margin: 2% ;font-weight: bold">All <span>*</span> marked fiels are compulsory</p>
+                        <br>
+                        <div class="form-group">
+                        <label class="col-lg-4" id="insert" style="margin-bottom:10px;"><span>*</span> Username:</label>
+                        <input type="text" class="form-control col-lg-8" style="margin-bottom:10px;" placeholder="Enter User Name.." autocomplete="off" value="" name="username" required>   
+                        <label class="col-lg-4" id="insert" style="margin-bottom:10px;"><span>*</span> Password:</label>
+                        <input type="password" class="form-control col-lg-8 " style="margin-bottom:10px;" placeholder="Enter Password.." autocomplete="off" value="" name="pass" required>
+                        <label class="col-lg-4" id="insert" style="margin-bottom:10px;"><span>*</span> Confirm Password:</label>
+                        <input type="password" value="" style="margin-bottom:10px;" class="form-control col-lg-8" autocomplete="off" placeholder="Confirm Password.." name="confirm_pass" required />
+                        <label class="col-lg-4" id="insert" style="margin-bottom:10px;"><span>*</span> Mobile No.:</label>
+                        <input type="number" style="margin-bottom:10px;" class="form-control col-lg-8 "  placeholder="Enter Mobile No.." autocomplete="off" name="chapter_name" required>
+                        <label class="col-lg-4" style="margin-bottom:10px;" id="insert"><span>*</span> E-mail:</label>
+                        <input type="text" style="margin-bottom:10px;" class="form-control col-lg-8 "  placeholder="Enter E-mail ID.." autocomplete="off" name="book_name" required>
+                        <label class="col-lg-4" style="margin-bottom:10px;" id="insert"><span>*</span> Birth Date :</label>
+                        <input type="date" style="margin-bottom:30px;" class="form-control col-lg-8 " name="publication_year" value="" placeholder="0000/00/00" required>
+                        <label class="col-lg-4"></label>
+                        <button type="submit" class="btn btn-primary col-lg-4" id="submit" name="submit">Sign Up</button>
+                        
+                        </div>  
+                    </form>
+                    <label class="text-center col-lg-12" id="insert" style="margin-bottom:15px;font-weight: normal; color:#006400;"> Already Have Account?</label>
+                        <label class="col-lg-4"></label>
+                        <button type="submit" class="btn btn-primary col-lg-4 " id="login" name="login">Sign In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
